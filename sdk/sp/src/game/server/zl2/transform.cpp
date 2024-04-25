@@ -1,12 +1,14 @@
 #include "cbase.h"
 
-void CC_TransformPlayerToPenguin() {
+#define TRANSFORM_MODEL	"models/alyx.mdl"
+
+void CC_TransformPlayerToPenguin(void) {
 	CBasePlayer *pPlayer = UTIL_GetLocalPlayer();
 	
 	if(!pPlayer)
 		return;
 	else {
-		pPlayer -> SetModel("models/alyx.mdl");
+		pPlayer -> SetModel(TRANSFORM_MODEL);
 	}
 }
 
