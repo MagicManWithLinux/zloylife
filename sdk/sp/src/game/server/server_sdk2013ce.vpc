@@ -51,6 +51,11 @@ $Project "Server"
 		$Folder	"SDK2013CE DLL"
 		{
 		}
+		
+		$Folder "ZL2 DLL"
+		{
+			$File	"zl2\transform.cpp"
+		}
 
 		$Folder	"HL2 DLL"
 		{
