@@ -1,7 +1,7 @@
 "GameInfo"
 {
 	game 		"Zloy-Life 2"
-	title 		""
+	title 		"Zloy-Life 2"
 	title2		""
 	supportsvr	1
 
@@ -17,20 +17,20 @@
 			
 			game+mod+mod_write+default_write_path		|gameinfo_path|.
 			gamebin				|gameinfo_path|bin
-
+			
 			game_lv				hl2/hl2_lv.vpk
-			game				|all_source_engine_paths|hl2/hl2_english.vpk
-			game				|all_source_engine_paths|hl2/hl2_pak.vpk
-			game				|all_source_engine_paths|hl2/hl2_textures.vpk
-			game				|all_source_engine_paths|hl2/hl2_sound_vo_english.vpk
-			game				|all_source_engine_paths|hl2/hl2_sound_misc.vpk
-			game				|all_source_engine_paths|hl2/hl2_misc.vpk
-			platform			|all_source_engine_paths|platform/platform_misc.vpk
+			game				"|all_source_engine_paths|../Half-Life 2/hl2/hl2_english.vpk"
+			game				"|all_source_engine_paths|../Half-Life 2/hl2/hl2_pak.vpk"
+			game				"|all_source_engine_paths|../Half-Life 2/hl2/hl2_textures.vpk"
+			game				"|all_source_engine_paths|../Half-Life 2/hl2/hl2_sound_vo_english.vpk"
+			game				"|all_source_engine_paths|../Half-Life 2/hl2/hl2_sound_misc.vpk"
+			game				"|all_source_engine_paths|../Half-Life 2/hl2/hl2_misc.vpk"
+			platform			"|all_source_engine_paths|../Half-Life 2/platform/platform_misc.vpk"
 
 			game+game_write		hl2
 
-			// gamebin				hl2_mod/bin
-
+			gamebin				hl2_mod/bin
+			
 			game				|all_source_engine_paths|hl2
 			platform			|all_source_engine_paths|platform
 		}

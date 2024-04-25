@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/kowalski/texture_001"
+	"$surfaceprop" "Flesh"
+}
