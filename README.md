@@ -6,7 +6,7 @@
 В моде используются следующий контент:\
 [The Penguins Player Model & NPC Pack](https://steamcommunity.com/sharedfiles/filedetails/?id=2585746247) - CKTheAmazingFrog
 ## TODO
-- [ ] Написать инфу
+- [ ] Написать инфу на английском
 - [ ] Кинуть исходники
 - [ ] Сбилдить исходники
 - [ ] Кинуть ресурсы
