@@ -28,6 +28,9 @@
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
+// Penguins
+#include "zl2/randompenguin.h"
+
 ConVar	sk_combine_s_health( "sk_combine_s_health","0");
 ConVar	sk_combine_s_kick( "sk_combine_s_kick","0");
 
@@ -95,6 +98,7 @@ void CNPC_CombineS::Spawn( void )
 void CNPC_CombineS::Precache()
 {
 	const char *pModelName = STRING( GetModelName() );
+	CRandomPenguin rPenguin;
 
 	if( !Q_stricmp( pModelName, "models/combine_super_soldier.mdl" ) )
 	{
@@ -107,7 +111,7 @@ void CNPC_CombineS::Precache()
 
 	if( !GetModelName() )
 	{
-		SetModelName( MAKE_STRING( "models/combine_soldier.mdl" ) );
+		SetModelName( MAKE_STRING(rPenguin.RandomPenguin()) );
 	}
 
 	PrecacheModel( STRING( GetModelName() ) );
