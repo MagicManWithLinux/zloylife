@@ -1,0 +1,20 @@
+22:20:17.125 INFO  Loading C:\Program Files (x86)\Steam\steamapps\sourcemods\zloylife\maps\d2_coast_11.bsp
+22:20:18.354 INFO  Using 'DStaticPropV5' for sprp version 5
+22:20:18.487 WARN  Tried reading lump 'LUMP_DISP_MULTIBLEND', but it is not supported by the bsp's version
+22:20:18.514 WARN  Lump LUMP_OVERLAY_SYSTEM_LEVELS is empty
+22:20:18.574 INFO  BSP version: 20
+22:20:18.575 INFO  Game: Half-Life 2
+22:20:18.580 INFO  Equal amount of areaporal entities and areaportal brushes. Using 'Ordered' method
+22:20:18.581 INFO  Unequal amount of occluder faces and occluder brush faces. Falling back to 'Manual' method
+22:20:19.726 INFO  2433 (21.4%) exact brushside->origface matches
+22:20:19.726 INFO  28/567 (nondisp/disp) original faces left after exact brushside->origface matching
+22:20:19.737 INFO  61 (0.5%) partial brushside->origface matches
+22:20:19.737 INFO  Writing brushes and planes
+22:20:19.786 INFO  Writing displacements
+22:20:19.917 INFO  Writing entities
+22:20:19.965 INFO  Writing func_details
+22:20:20.247 INFO  Writing info_overlays
+22:20:20.249 INFO  Writing prop_statics
+22:20:20.256 INFO  Writing env_cubemaps
+22:20:20.257 INFO  Writing func_ladders
+22:20:20.259 INFO  Finished decompiling C:\Program Files (x86)\Steam\steamapps\sourcemods\zloylife\maps\d2_coast_11.bsp.

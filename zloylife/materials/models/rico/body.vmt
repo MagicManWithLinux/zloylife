@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/rico/ricotex"
+	"$surfaceprop" "Flesh"
+}

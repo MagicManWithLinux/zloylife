@@ -55,6 +55,7 @@ $Project "Server"
 		$Folder "ZL2 DLL"
 		{
 			$File	"zl2\transform.cpp"
+			$File	"zl2\randomtest.cpp"
 		}
 
 		$Folder	"HL2 DLL"

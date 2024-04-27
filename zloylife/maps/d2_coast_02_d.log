@@ -1,0 +1,15 @@
+22:20:13.473 INFO  Loading C:\Program Files (x86)\Steam\steamapps\sourcemods\zloylife\maps\d2_coast_02.bsp
+22:20:13.474 ERROR Error occurred decompiling 'C:\Program Files (x86)\Steam\steamapps\sourcemods\zloylife\maps\d2_coast_02.bsp'
+info.ata4.bspsrc.lib.exceptions.BspException: Invalid or missing header
+	at info.ata4.bspsrc.lib.BspFile.createBuffer(BspFile.java:226) ~[bspsrc.jar:?]
+	at info.ata4.bspsrc.lib.BspFile.load(BspFile.java:122) ~[bspsrc.jar:?]
+	at info.ata4.bspsrc.lib.BspFile.load(BspFile.java:184) ~[bspsrc.jar:?]
+	at info.ata4.bspsrc.decompiler.BspSource.decompile(BspSource.java:155) ~[bspsrc.jar:?]
+	at info.ata4.bspsrc.decompiler.BspSource.decompile(BspSource.java:128) ~[bspsrc.jar:?]
+	at info.ata4.bspsrc.decompiler.BspSource.lambda$run$0(BspSource.java:94) ~[bspsrc.jar:?]
+	at java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(Unknown Source) [?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source) [?:?]
+	at java.util.concurrent.ForkJoinPool.scan(Unknown Source) [?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:?]

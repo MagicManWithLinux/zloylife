@@ -1,0 +1,22 @@
+22:20:23.415 INFO  Loading C:\Program Files (x86)\Steam\steamapps\sourcemods\zloylife\maps\d3_c17_07.bsp
+22:20:24.407 INFO  Using 'DStaticPropV5' for sprp version 5
+22:20:24.418 WARN  Tried reading lump 'LUMP_DISP_MULTIBLEND', but it is not supported by the bsp's version
+22:20:24.421 WARN  Tried reading lump 'LUMP_OVERLAY_FADES', but it is not supported by the bsp's version
+22:20:24.421 WARN  Tried reading lump 'LUMP_OVERLAY_SYSTEM_LEVELS', but it is not supported by the bsp's version
+22:20:24.422 WARN  Tried reading lump 'LUMP_MAP_FLAGS', but it is not supported by the bsp's version
+22:20:24.423 INFO  BSP version: 19
+22:20:24.423 INFO  Game: Half-Life 2
+22:20:24.438 INFO  Equal amount of areaporal entities and areaportal brushes. Using 'Ordered' method
+22:20:24.439 INFO  Unequal amount of occluder faces and occluder brush faces. Falling back to 'Manual' method
+22:20:24.631 INFO  4025 (29.0%) exact brushside->origface matches
+22:20:24.631 INFO  0/35 (nondisp/disp) original faces left after exact brushside->origface matching
+22:20:24.658 INFO  109 (0.8%) partial brushside->origface matches
+22:20:24.658 INFO  Writing brushes and planes
+22:20:24.992 INFO  Writing displacements
+22:20:25.001 INFO  Writing entities
+22:20:25.068 INFO  Writing func_details
+22:20:25.252 INFO  Writing info_overlays
+22:20:25.253 INFO  Writing prop_statics
+22:20:25.260 INFO  Writing env_cubemaps
+22:20:25.262 INFO  Writing func_ladders
+22:20:25.262 INFO  Finished decompiling C:\Program Files (x86)\Steam\steamapps\sourcemods\zloylife\maps\d3_c17_07.bsp.

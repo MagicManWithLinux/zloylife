@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/skipper/texture_001"
+	"$surfaceprop" "Flesh"
+}

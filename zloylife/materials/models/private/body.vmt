@@ -1,5 +1,5 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models/breen/texture_001"
+	"$basetexture" "models/private/texture_001"
 	"$surfaceprop" "Flesh"
 }

@@ -23,6 +23,9 @@
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
+// randommodel
+#include "vstdlib/random.h"
+
 //#define SF_METROPOLICE_					0x00010000
 #define SF_METROPOLICE_SIMPLE_VERSION		0x00020000
 #define SF_METROPOLICE_ALWAYS_STITCH		0x00080000
@@ -379,6 +382,15 @@ public:
 	bool				m_bDamageAnyNPC;
 };
 
+// Model list
+
+const char* modelList[4] = {
+	"models/kowalski/kowalski.mdl",
+	"models/private/private.mdl",
+	"models/rico/rico.mdl",
+	"models/skipper/skipper.mdl"
+};
+
 //------------------------------------------------------------------------------
 // Purpose :	start and end trace position, amount 
 //				of damage to do, and damage type. Returns a pointer to
@@ -572,13 +584,15 @@ bool CNPC_MetroPolice::OverrideMoveFacing( const AILocalMoveGoal_t &move, float 
 //-----------------------------------------------------------------------------
 void CNPC_MetroPolice::Precache( void )
 {
+	int rInt = random -> RandomInt(0, 3);
+
 	if ( HasSpawnFlags( SF_NPC_START_EFFICIENT ) )
 	{
-		SetModelName( AllocPooledString("models/police_cheaple.mdl" ) );
+		SetModelName( AllocPooledString(modelList[rInt]) );
 	}
 	else
 	{
-		SetModelName( AllocPooledString("models/police.mdl") );
+		SetModelName( AllocPooledString(modelList[rInt]) );
 	}
 
 	PrecacheModel( STRING( GetModelName() ) );
