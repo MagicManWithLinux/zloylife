@@ -24,7 +24,7 @@
 #include "tier0/memdbgon.h"
 
 // randommodel
-#include "vstdlib/random.h"
+#include "zl2/randompenguin.h"
 
 //#define SF_METROPOLICE_					0x00010000
 #define SF_METROPOLICE_SIMPLE_VERSION		0x00020000
@@ -382,15 +382,6 @@ public:
 	bool				m_bDamageAnyNPC;
 };
 
-// Model list
-
-const char* modelList[4] = {
-	"models/kowalski/kowalski.mdl",
-	"models/private/private.mdl",
-	"models/rico/rico.mdl",
-	"models/skipper/skipper.mdl"
-};
-
 //------------------------------------------------------------------------------
 // Purpose :	start and end trace position, amount 
 //				of damage to do, and damage type. Returns a pointer to
@@ -584,15 +575,15 @@ bool CNPC_MetroPolice::OverrideMoveFacing( const AILocalMoveGoal_t &move, float 
 //-----------------------------------------------------------------------------
 void CNPC_MetroPolice::Precache( void )
 {
-	int rInt = random -> RandomInt(0, 3);
+	CRandomPenguin rPenguin;
 
 	if ( HasSpawnFlags( SF_NPC_START_EFFICIENT ) )
 	{
-		SetModelName( AllocPooledString(modelList[rInt]) );
+		SetModelName( AllocPooledString(rPenguin.RandomPenguin()) );
 	}
 	else
 	{
-		SetModelName( AllocPooledString(modelList[rInt]) );
+		SetModelName( AllocPooledString(rPenguin.RandomPenguin()) );
 	}
 
 	PrecacheModel( STRING( GetModelName() ) );
