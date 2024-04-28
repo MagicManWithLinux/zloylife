@@ -55,6 +55,7 @@ $Project "Server"
 		$Folder "ZL2 DLL"
 		{
 			$File	"zl2\transform.cpp"
+			$File	"zl2\transform.h"
 			$File	"zl2\randomtest.cpp"
 			$File	"zl2\randompenguin.cpp"
 			$File	"zl2\randompenguin.h"
