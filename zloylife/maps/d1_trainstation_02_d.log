@@ -20,3 +20,528 @@
 22:20:13.247 INFO  Writing env_cubemaps
 22:20:13.276 INFO  Writing func_ladders
 22:20:13.277 INFO  Finished decompiling C:\Program Files (x86)\Steam\steamapps\sourcemods\zloylife\maps\d1_trainstation_02.bsp.
+
+
+
+materialPath: C:\Program Files (x86)\Steam\steamapps\sourcemods\zloylife\materials
+Loading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Could not locate 'GameData' key in c:\program files (x86)\steam\steamapps\sourcemods\zloylife\gameinfo.txt
+Patching WVT material: maps/d1_trainstation_02_d/nature/red_grass_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 950 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.prt...Building visibility clusters...
+done (0)
+WARNING: node without a volume
+WARNING: node without a volume
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day01_01*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Creating default HDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day01_01*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (813112 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 6657 texinfos to 2643
+Reduced 918 texdatas to 593 (58604 bytes to 38147)
+Writing c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+4 seconds elapsed
+
+
+
+8 threads
+reading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+reading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.prt
+1057 portalclusters
+3166 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 69126 visible clusters (10.48%)
+Total clusters visible: 659430
+Average clusters visible: 623
+Building PAS...
+Average clusters audible: 938
+visdatasize:250919  compressed from 287504
+writing c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+6341 faces
+2 degenerate faces
+2329911 square feet [335507264.00 square inches]
+3 Displacements
+5866 Square Feet [844800.00 Square Inches]
+6339 patches before subdivision
+75471 patches after subdivision
+1109 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 11393014, max 1082
+transfer lists:  86.9 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(386923, 309387, 151211)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(75212, 50406, 18806)
+Build Patch/Sample Hash Table(s).....Done<0.0320 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+867 of 1075 (80% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                 116/1024         5568/49152    (11.3%) 
+brushes               2210/8192        26520/98304    (27.0%) 
+brushsides           20550/65536      164400/524288   (31.4%) 
+planes               22198/65536      443960/1310720  (33.9%) 
+vertexes             17809/65536      213708/786432   (27.2%) 
+nodes                 3631/65536      116192/2097152  ( 5.5%) 
+texinfos              2643/12288      190296/884736   (21.5%) 
+texdata                593/2048        18976/65536    (29.0%) 
+dispinfos                3/0             528/0        ( 0.0%) 
+disp_verts             243/0            4860/0        ( 0.0%) 
+disp_tris              384/0             768/0        ( 0.0%) 
+disp_lmsamples       14856/0           14856/0        ( 0.0%) 
+faces                 6341/65536      355096/3670016  ( 9.7%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             4542/65536      254352/3670016  ( 6.9%) 
+leaves                3748/65536      119936/2097152  ( 5.7%) 
+leaffaces             8325/65536       16650/131072   (12.7%) 
+leafbrushes           5221/65536       10442/131072   ( 8.0%) 
+areas                   13/256           104/2048     ( 5.1%) 
+surfedges            48130/512000     192520/2048000  ( 9.4%) 
+edges                29919/256000     119676/1024000  (11.7%) 
+LDR worldlights       1105/8192        97240/720896   (13.5%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips           2355/32768       23550/327680   ( 7.2%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices         53922/65536      107844/131072   (82.3%) VERY FULL!
+cubemapsamples         174/1024         2784/16384    (17.0%) 
+overlays                27/512          9504/180224   ( 5.3%) 
+LDR lightdata         [variable]     3147796/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]      250919/16777216 ( 1.5%) 
+entdata               [variable]      243127/393216   (61.8%) 
+LDR ambient table     3748/65536       14992/262144   ( 5.7%) 
+HDR ambient table     3748/65536       14992/262144   ( 5.7%) 
+LDR leaf ambient     15162/65536      424536/1835008  (23.1%) 
+HDR leaf ambient      3748/65536      104944/1835008  ( 5.7%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/28524    ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/31234    ( 0.0%) 
+pakfile               [variable]    18788162/0        ( 0.0%) 
+physics               [variable]      813112/4194304  (19.4%) 
+physics terrain       [variable]         203/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 17206
+Writing c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+55 seconds elapsed
+
+
+
+materialPath: C:\Program Files (x86)\Steam\steamapps\sourcemods\zloylife\materials
+Loading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Could not locate 'GameData' key in c:\program files (x86)\steam\steamapps\sourcemods\zloylife\gameinfo.txt
+Patching WVT material: maps/d1_trainstation_02_d/nature/red_grass_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (1)
+Find Visible Detail Sides...
+Merged 950 detail faces...done (1)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.prt...Building visibility clusters...
+done (0)
+WARNING: node without a volume
+WARNING: node without a volume
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day01_01*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Creating default HDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day01_01*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (0) (813112 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 6657 texinfos to 2643
+Reduced 918 texdatas to 593 (58604 bytes to 38147)
+Writing c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+3 seconds elapsed
+
+
+
+8 threads
+reading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+reading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.prt
+1057 portalclusters
+3166 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 69126 visible clusters (10.48%)
+Total clusters visible: 659430
+Average clusters visible: 623
+Building PAS...
+Average clusters audible: 938
+visdatasize:250919  compressed from 287504
+writing c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+0 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+6341 faces
+2 degenerate faces
+2329911 square feet [335507264.00 square inches]
+3 Displacements
+5866 Square Feet [844800.00 Square Inches]
+6339 patches before subdivision
+75471 patches after subdivision
+1109 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 11393014, max 1082
+transfer lists:  86.9 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(386923, 309387, 151211)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(75212, 50406, 18806)
+Build Patch/Sample Hash Table(s).....Done<0.0277 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+867 of 1075 (80% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                 116/1024         5568/49152    (11.3%) 
+brushes               2210/8192        26520/98304    (27.0%) 
+brushsides           20550/65536      164400/524288   (31.4%) 
+planes               22198/65536      443960/1310720  (33.9%) 
+vertexes             17809/65536      213708/786432   (27.2%) 
+nodes                 3631/65536      116192/2097152  ( 5.5%) 
+texinfos              2643/12288      190296/884736   (21.5%) 
+texdata                593/2048        18976/65536    (29.0%) 
+dispinfos                3/0             528/0        ( 0.0%) 
+disp_verts             243/0            4860/0        ( 0.0%) 
+disp_tris              384/0             768/0        ( 0.0%) 
+disp_lmsamples       14856/0           14856/0        ( 0.0%) 
+faces                 6341/65536      355096/3670016  ( 9.7%) 
+hdr faces                0/65536           0/3670016  ( 0.0%) 
+origfaces             4542/65536      254352/3670016  ( 6.9%) 
+leaves                3748/65536      119936/2097152  ( 5.7%) 
+leaffaces             8325/65536       16650/131072   (12.7%) 
+leafbrushes           5221/65536       10442/131072   ( 8.0%) 
+areas                   13/256           104/2048     ( 5.1%) 
+surfedges            48130/512000     192520/2048000  ( 9.4%) 
+edges                29919/256000     119676/1024000  (11.7%) 
+LDR worldlights       1105/8192        97240/720896   (13.5%) 
+HDR worldlights          0/8192            0/720896   ( 0.0%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips           2355/32768       23550/327680   ( 7.2%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices         53922/65536      107844/131072   (82.3%) VERY FULL!
+cubemapsamples         174/1024         2784/16384    (17.0%) 
+overlays                27/512          9504/180224   ( 5.3%) 
+LDR lightdata         [variable]     3147796/0        ( 0.0%) 
+HDR lightdata         [variable]           0/0        ( 0.0%) 
+visdata               [variable]      250919/16777216 ( 1.5%) 
+entdata               [variable]      243127/393216   (61.8%) 
+LDR ambient table     3748/65536       14992/262144   ( 5.7%) 
+HDR ambient table     3748/65536       14992/262144   ( 5.7%) 
+LDR leaf ambient     15162/65536      424536/1835008  (23.1%) 
+HDR leaf ambient      3748/65536      104944/1835008  ( 5.7%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/28524    ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/31234    ( 0.0%) 
+pakfile               [variable]    18788162/0        ( 0.0%) 
+physics               [variable]      813112/4194304  (19.4%) 
+physics terrain       [variable]         203/1048576  ( 0.0%) 
+
+Level flags = 0
+
+Total triangle count: 17206
+Writing c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+52 seconds elapsed
+
+
+
+materialPath: C:\Program Files (x86)\Steam\steamapps\sourcemods\zloylife\materials
+Loading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Could not locate 'GameData' key in c:\program files (x86)\steam\steamapps\sourcemods\zloylife\gameinfo.txt
+Patching WVT material: maps/d1_trainstation_02_d/nature/red_grass_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 950 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.prt...Building visibility clusters...
+done (0)
+WARNING: node without a volume
+WARNING: node without a volume
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day01_01*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Creating default HDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day01_01*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (813112 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 6657 texinfos to 2643
+Reduced 918 texdatas to 593 (58604 bytes to 38147)
+Writing c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+4 seconds elapsed
+
+
+
+8 threads
+reading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+reading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.prt
+1057 portalclusters
+3166 numportals
+0...1...2...3...4...5...6...7...8...9...10Optimized: 69126 visible clusters (10.48%)
+Total clusters visible: 659430
+Average clusters visible: 623
+Building PAS...
+Average clusters audible: 938
+visdatasize:250919  compressed from 287504
+writing c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+0 seconds elapsed
+
+
+
+materialPath: C:\Program Files (x86)\Steam\steamapps\sourcemods\zloylife\materials
+Loading C:\Users\MagicManWithThinkpad\Documents\zloylife\zloylife\maps\d1_trainstation_02_d.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Could not locate 'GameData' key in c:\program files (x86)\steam\steamapps\sourcemods\zloylife\gameinfo.txt
+Patching WVT material: maps/d1_trainstation_02_d/nature/red_grass_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 950 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (0)
+writing C:\Users\MagicManWithThinkpad\Documents\zloylife\zloylife\maps\d1_trainstation_02_d.prt...Building visibility clusters...
+done (0)
+WARNING: node without a volume
+WARNING: node without a volume
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day01_01*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Creating default HDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day01_01*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (813112 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 6657 texinfos to 2643
+Reduced 918 texdatas to 593 (58604 bytes to 38147)
+Writing C:\Users\MagicManWithThinkpad\Documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+14 seconds elapsed
+
+
+
+8 threads
+reading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+reading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.prt
+1057 portalclusters
+3166 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5..
+
+
+materialPath: C:\Program Files (x86)\Steam\steamapps\sourcemods\zloylife\materials
+Loading C:\Users\MagicManWithThinkpad\Documents\zloylife\zloylife\maps\d1_trainstation_02_d.vmf
+ConVarRef mat_reduceparticles doesn't point to an existing ConVar
+Could not locate 'GameData' key in c:\program files (x86)\steam\steamapps\sourcemods\zloylife\gameinfo.txt
+Patching WVT material: maps/d1_trainstation_02_d/nature/red_grass_wvt_patch
+fixing up env_cubemap materials on brush sides...
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Processing areas...done (0)
+Building Faces...done (0)
+Chop Details...done (0)
+Find Visible Detail Sides...
+Merged 950 detail faces...done (0)
+Merging details...done (0)
+FixTjuncs...
+PruneNodes...
+WriteBSP...
+done (1)
+writing C:\Users\MagicManWithThinkpad\Documents\zloylife\zloylife\maps\d1_trainstation_02_d.prt...Building visibility clusters...
+done (0)
+WARNING: node without a volume
+WARNING: node without a volume
+Creating default LDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day01_01*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Creating default HDR cubemaps for env_cubemap using skybox materials:
+   skybox/sky_day01_01*.vmt
+ ! Run buildcubemaps in the engine to get the correct cube maps.
+Finding displacement neighbors...
+Finding lightmap sample positions...
+Displacement Alpha : 0...1...2...3...4...5...6...7...8...9...10
+Building Physics collision data...
+done (1) (813112 bytes)
+Placing detail props : 0...1...2...3...4...5...6...7...8...9...10
+Compacting texture/material tables...
+Reduced 6657 texinfos to 2643
+Reduced 918 texdatas to 593 (58604 bytes to 38147)
+Writing C:\Users\MagicManWithThinkpad\Documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+8 seconds elapsed
+
+
+
+8 threads
+reading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+reading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.prt
+1057 portalclusters
+3166 numportals
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10Optimized: 1408 visible clusters (0.46%)
+Total clusters visible: 305691
+Average clusters visible: 289
+Building PAS...
+Average clusters audible: 729
+visdatasize:208258  compressed from 287504
+writing c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+3 minutes, 9 seconds elapsed
+
+
+
+[Reading texlights from 'lights.rad']
+[45 texlights parsed from 'lights.rad']
+
+Loading c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+6341 faces
+2 degenerate faces
+2329911 square feet [335507264.00 square inches]
+3 Displacements
+5866 Square Feet [844800.00 Square Inches]
+6339 patches before subdivision
+75471 patches after subdivision
+1109 direct lights
+0...1...2...3...4...5...6...7...8...9...100...1...2...3...4...5...6...7...8...9...10transfers 11537208, max 1081
+transfer lists:  88.0 megs
+0...1...2...3...4...5...6...7...8...9...10	Bounce #1 added RGB(348444, 274903, 131131)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #2 added RGB(65888, 43499, 15854)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #3 added RGB(12436, 6894, 1949)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #4 added RGB(2953, 1352, 286)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #5 added RGB(713, 269, 44)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #6 added RGB(189, 59, 7)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #7 added RGB(51, 13, 1)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #8 added RGB(14, 3, 0)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #9 added RGB(4, 1, 0)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #10 added RGB(1, 0, 0)
+0...1...2...3...4...5...6...7...8...9...10	Bounce #11 added RGB(0, 0, 0)
+Build Patch/Sample Hash Table(s).....Done<0.0530 sec>
+0...1...2...3...4...5...6...7...8...9...10FinalLightFace Done
+Computing detail prop lighting : 0...1...2...3...4...5...6...7...8...9...10
+1057 of 1075 (98% of) surface lights went in leaf ambient cubes.
+0...1...2...3...4...5...6...7...8...9...10Writing leaf ambient...done
+Computing static prop lighting : 00...1...2...3...4...5...6...7...8...9...10
+Ready to Finish
+
+Object names       Objects/Maxobjs  Memory / Maxmem  Fullness 
+------------       ---------------  ---------------  -------- 
+models                 116/1024         5568/49152    (11.3%) 
+brushes               2210/8192        26520/98304    (27.0%) 
+brushsides           20550/65536      164400/524288   (31.4%) 
+planes               22198/65536      443960/1310720  (33.9%) 
+vertexes             17809/65536      213708/786432   (27.2%) 
+nodes                 3631/65536      116192/2097152  ( 5.5%) 
+texinfos              2643/12288      190296/884736   (21.5%) 
+texdata                593/2048        18976/65536    (29.0%) 
+dispinfos                3/0             528/0        ( 0.0%) 
+disp_verts             243/0            4860/0        ( 0.0%) 
+disp_tris              384/0             768/0        ( 0.0%) 
+disp_lmsamples       14856/0           14856/0        ( 0.0%) 
+faces                 6341/65536      355096/3670016  ( 9.7%) 
+hdr faces             6341/65536      355096/3670016  ( 9.7%) 
+origfaces             4542/65536      254352/3670016  ( 6.9%) 
+leaves                3748/65536      119936/2097152  ( 5.7%) 
+leaffaces             8325/65536       16650/131072   (12.7%) 
+leafbrushes           5221/65536       10442/131072   ( 8.0%) 
+areas                   13/256           104/2048     ( 5.1%) 
+surfedges            48130/512000     192520/2048000  ( 9.4%) 
+edges                29919/256000     119676/1024000  (11.7%) 
+LDR worldlights          0/8192            0/720896   ( 0.0%) 
+HDR worldlights       1105/8192        97240/720896   (13.5%) 
+leafwaterdata            0/32768           0/393216   ( 0.0%) 
+waterstrips           2355/32768       23550/327680   ( 7.2%) 
+waterverts               0/65536           0/786432   ( 0.0%) 
+waterindices         53922/65536      107844/131072   (82.3%) VERY FULL!
+cubemapsamples         174/1024         2784/16384    (17.0%) 
+overlays                27/512          9504/180224   ( 5.3%) 
+LDR lightdata         [variable]           0/0        ( 0.0%) 
+HDR lightdata         [variable]     3147796/0        ( 0.0%) 
+visdata               [variable]      208258/16777216 ( 1.2%) 
+entdata               [variable]      243120/393216   (61.8%) 
+LDR ambient table     3748/65536       14992/262144   ( 5.7%) 
+HDR ambient table     3748/65536       14992/262144   ( 5.7%) 
+LDR leaf ambient      3748/65536      104944/1835008  ( 5.7%) 
+HDR leaf ambient     15156/65536      424368/1835008  (23.1%) 
+occluders                0/0               0/0        ( 0.0%) 
+occluder polygons        0/0               0/0        ( 0.0%) 
+occluder vert ind        0/0               0/0        ( 0.0%) 
+detail props          [variable]           1/28524    ( 0.0%) 
+dtl prp lght          [variable]           1/4        (25.0%) 
+HDR dtl prp lght      [variable]           1/4        (25.0%) 
+static props          [variable]           1/31234    ( 0.0%) 
+pakfile               [variable]    20652622/0        ( 0.0%) 
+physics               [variable]      813112/4194304  (19.4%) 
+physics terrain       [variable]         203/1048576  ( 0.0%) 
+
+Level flags = 2
+
+Total triangle count: 17206
+Writing c:\users\magicmanwiththinkpad\documents\zloylife\zloylife\maps\d1_trainstation_02_d.bsp
+4 minutes, 51 seconds elapsed
