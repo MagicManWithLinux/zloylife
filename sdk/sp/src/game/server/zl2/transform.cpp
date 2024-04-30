@@ -7,12 +7,6 @@
 #define TRANSFORM_MODEL	"models/private/private.mdl"
 #define PLAYER_MODEL	"models/player.mdl"
 
-/*
-void CTransformPlayerToPenguin::IKilledCombine() {
-	CBasePlayer *pPlayer = UTIL_GetLocalPlayer();
-}
-*/
-
 void CTransformPlayerToPenguin::Command(void) {
 	CBasePlayer *pPlayer = UTIL_GetLocalPlayer();
 	
@@ -32,7 +26,6 @@ void CTransformPlayerToPenguin::Command(void) {
 
 void CC_TransformPlayerToPenguin(void) {
 	CTransformPlayerToPenguin tptp;
-
 	tptp.Command();
 }
 

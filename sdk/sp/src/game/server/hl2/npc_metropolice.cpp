@@ -23,7 +23,7 @@
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
-// randommodel
+// Zloy-Life 2
 #include "zl2/randompenguin.h"
 
 //#define SF_METROPOLICE_					0x00010000

@@ -5057,7 +5057,6 @@ void CBasePlayer::Precache( void )
 {
 	BaseClass::Precache();
 
-
 	PrecacheScriptSound( "Player.FallGib" );
 	PrecacheScriptSound( "Player.Death" );
 	PrecacheScriptSound( "Player.PlasmaDamage" );
@@ -9311,6 +9310,7 @@ void CBasePlayer::Event_KilledOther( CBaseEntity *pVictim, const CTakeDamageInfo
 	if ( pVictim != this )
 	{
 		gamestats->Event_PlayerKilledOther( this, pVictim, info );
+
 	}
 	else
 	{

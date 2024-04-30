@@ -1,4 +1,5 @@
 #include "cbase.h"
+#include "baseentity.h"
 
 class CTransformPlayerToPenguin {
 public:
