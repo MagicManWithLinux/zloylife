@@ -9,6 +9,8 @@
 Качай в стиме Half-Life 2 и Source SDK 2013 Singleplayer\
 У Source SDK 2013 Singleplayer активируй бету [upcoming]\
 Качай zip из Releases и кидай содержимое в sourcemods
+## Линух
+Билды под линукс будут для релизных версий
 ## Скрины
 <img src="https://github.com/MagicManWithLinux/zloylife/blob/main/dev/hl2_ojSja31oJu.jpg?raw=true" width=50%>
 <img src="https://raw.githubusercontent.com/MagicManWithLinux/zloylife/main/dev/hl2_uGDRzGr4So.jpg" width=50%>
