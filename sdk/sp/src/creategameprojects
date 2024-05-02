@@ -1,5 +1,5 @@
 #!/bin/bash
 
 pushd `dirname $0`
-devtools/bin/vpc /2013 /linux32 /sdk2013ce +game /mksln Game
+devtools/bin/vpc /hl2 /episodic +game /mksln games
 popd

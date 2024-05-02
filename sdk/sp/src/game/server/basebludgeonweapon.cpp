@@ -381,7 +381,4 @@ void CBaseHLBludgeonWeapon::Swing( int bIsSecondary )
 
 	//Play swing sound
 	WeaponSound( SINGLE );
-	
-	// Send the player 'attack' animation.
-    pOwner->SetAnimation(PLAYER_ATTACK1);
 }

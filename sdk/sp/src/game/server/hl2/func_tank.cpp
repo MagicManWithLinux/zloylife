@@ -80,14 +80,11 @@ BEGIN_DATADESC( CFuncTank )
 #ifdef HL2_EPISODIC	
 	DEFINE_KEYFIELD( m_iszAmmoType, FIELD_STRING, "ammotype" ),
 	DEFINE_FIELD( m_iAmmoType, FIELD_INTEGER ),
-#endif // HL2_EPISODIC
-
-//Hl2 fix
-#ifdef SDK2013CE
+#else
 	DEFINE_FIELD( m_iSmallAmmoType, FIELD_INTEGER ),
 	DEFINE_FIELD( m_iMediumAmmoType, FIELD_INTEGER ),
 	DEFINE_FIELD( m_iLargeAmmoType, FIELD_INTEGER ),
-#endif
+#endif // HL2_EPISODIC
 
 	DEFINE_KEYFIELD( m_soundStartRotate, FIELD_SOUNDNAME, "rotatestartsound" ),
 	DEFINE_KEYFIELD( m_soundStopRotate, FIELD_SOUNDNAME, "rotatestopsound" ),
@@ -2471,38 +2468,31 @@ void CFuncTankGun::Fire( int bulletCount, const Vector &barrelEnd, const Vector 
 			FireBullets( info );
 		}
 	}
-#endif // HL2_EPISODIC
-
-//HL2 base fix
-#ifdef SDK2013CE
-	else
+#else
+	for ( i = 0; i < bulletCount; i++ )
 	{
-		for (i = 0; i < bulletCount; i++)
+		switch( m_bulletType )
 		{
-			switch (m_bulletType)
-			{
-			case TANK_BULLET_SMALL:
-				info.m_iAmmoType = m_iSmallAmmoType;
-				FireBullets(info);
-				break;
+		case TANK_BULLET_SMALL:
+			info.m_iAmmoType = m_iSmallAmmoType;
+			FireBullets( info );
+			break;
 
-			case TANK_BULLET_MEDIUM:
-				info.m_iAmmoType = m_iMediumAmmoType;
-				FireBullets(info);
-				break;
+		case TANK_BULLET_MEDIUM:
+			info.m_iAmmoType = m_iMediumAmmoType;
+			FireBullets( info );
+			break;
 
-			case TANK_BULLET_LARGE:
-				info.m_iAmmoType = m_iLargeAmmoType;
-				FireBullets(info);
-				break;
+		case TANK_BULLET_LARGE:
+			info.m_iAmmoType = m_iLargeAmmoType;
+			FireBullets( info );
+			break;
 
-			default:
-			case TANK_BULLET_NONE:
-				break;
-			}
+		default:
+		case TANK_BULLET_NONE:
+			break;
 		}
 	}
-	
 #endif // HL2_EPISODIC
 
 	CFuncTank::Fire( bulletCount, barrelEnd, forward, pAttacker, bIgnoreSpread );

@@ -1712,27 +1712,20 @@ void CHL2_Player::CheatImpulseCommands( int iImpulse )
 
 	case 51:
 	{
-	#ifdef SDK2013CE
-		if ( sv_cheats->GetBool() )
+		// Cheat to create a dynamic resupply item
+		Vector vecForward;
+		AngleVectors( EyeAngles(), &vecForward );
+		CBaseEntity *pItem = (CBaseEntity *)CreateEntityByName( "item_dynamic_resupply" );
+		if ( pItem )
 		{
-	#endif
-			// Cheat to create a dynamic resupply item
-			Vector vecForward;
-			AngleVectors( EyeAngles(), &vecForward );
-			CBaseEntity *pItem = (CBaseEntity *)CreateEntityByName( "item_dynamic_resupply" );
-			if ( pItem )
-			{
-				Vector vecOrigin = GetAbsOrigin() + vecForward * 256 + Vector(0,0,64);
-				QAngle vecAngles( 0, GetAbsAngles().y - 90, 0 );
-				pItem->SetAbsOrigin( vecOrigin );
-				pItem->SetAbsAngles( vecAngles );
-				pItem->KeyValue( "targetname", "resupply" );
-				pItem->Spawn();
-				pItem->Activate();
-			}
-	#ifdef SDK2013CE
+			Vector vecOrigin = GetAbsOrigin() + vecForward * 256 + Vector(0,0,64);
+			QAngle vecAngles( 0, GetAbsAngles().y - 90, 0 );
+			pItem->SetAbsOrigin( vecOrigin );
+			pItem->SetAbsAngles( vecAngles );
+			pItem->KeyValue( "targetname", "resupply" );
+			pItem->Spawn();
+			pItem->Activate();
 		}
-	#endif
 		break;
 	}
 
@@ -3160,13 +3153,6 @@ float CHL2_Player::GetHeldObjectMass( IPhysicsObject *pHeldObject )
 	}
 	return mass;
 }
-
-#ifdef SDK2013CE
-CBaseEntity	*CHL2_Player::GetHeldObject( void )
-{
-	return PhysCannonGetHeldEntity( GetActiveWeapon() );
-}
-#endif // SDK2013CE
 
 //-----------------------------------------------------------------------------
 // Purpose: Force the player to drop any physics objects he's carrying

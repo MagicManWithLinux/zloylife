@@ -15,9 +15,7 @@
 #include "basetypes.h"
 #include "dbgflag.h"
 #include "platform.h"
-//#ifndef SDK2013CE
-//#include <math.h>
-//#endif // !SDK2013CE
+#include <math.h>
 #include <stdio.h>
 #include <stdarg.h>
 
@@ -252,10 +250,10 @@ DBG_INTERFACE struct SDL_Window * GetAssertDialogParent();
 			if (!(_exp)) 													\
 			{ 																\
 				_SpewInfo( SPEW_ASSERT, __TFILE__, __LINE__ );				\
-				SpewRetval_t _ret = _SpewMessage("%s", static_cast<const char*>( _msg ));	\
+				SpewRetval_t ret = _SpewMessage("%s", static_cast<const char*>( _msg ));	\
 				CallAssertFailedNotifyFunc( __TFILE__, __LINE__, _msg );					\
 				_executeExp; 												\
-				if ( _ret == SPEW_DEBUGGER)									\
+				if ( ret == SPEW_DEBUGGER)									\
 				{															\
 					if ( !ShouldUseNewAssertDialog() || DoNewAssertDialog( __TFILE__, __LINE__, _msg ) ) \
 					{														\

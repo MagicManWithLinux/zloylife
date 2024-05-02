@@ -17,7 +17,6 @@ $Project "captioncompiler"
 $Project "client"
 {
 	"game\client\client_hl2mp.vpc"		[($WIN32||$POSIX) && $HL2MP]
-	"game\client\client_sdk2013ce.vpc"		[($WIN32||$POSIX) && $SDK2013CE]
 }
 
 $Project "fgdlib"
@@ -43,7 +42,6 @@ $Project "height2normal"
 $Project "server"
 {
 	"game\server\server_hl2mp.vpc"		[($WIN32||$POSIX) && $HL2MP]
-	"game\server\server_sdk2013ce.vpc"		[($WIN32||$POSIX) && $SDK2013CE]
 }
 
 $Project "mathlib"
@@ -131,7 +129,3 @@ $Project "vvis_launcher"
 	"utils\vvis_launcher\vvis_launcher.vpc" [$WIN32]
 }
 
-$Project "togl"
-{
-	"togl\togl.vpc" [$POSIX]
-}

@@ -23,9 +23,6 @@
 // memdbgon must be the last include file in a .cpp file!!!
 #include "tier0/memdbgon.h"
 
-// Zloy-Life 2
-#include "zl2/randompenguin.h"
-
 //#define SF_METROPOLICE_					0x00010000
 #define SF_METROPOLICE_SIMPLE_VERSION		0x00020000
 #define SF_METROPOLICE_ALWAYS_STITCH		0x00080000
@@ -575,15 +572,13 @@ bool CNPC_MetroPolice::OverrideMoveFacing( const AILocalMoveGoal_t &move, float 
 //-----------------------------------------------------------------------------
 void CNPC_MetroPolice::Precache( void )
 {
-	CRandomPenguin rPenguin;
-
 	if ( HasSpawnFlags( SF_NPC_START_EFFICIENT ) )
 	{
-		SetModelName( AllocPooledString(rPenguin.RandomPenguin()) );
+		SetModelName( AllocPooledString("models/police_cheaple.mdl" ) );
 	}
 	else
 	{
-		SetModelName( AllocPooledString(rPenguin.RandomPenguin()) );
+		SetModelName( AllocPooledString("models/police.mdl") );
 	}
 
 	PrecacheModel( STRING( GetModelName() ) );

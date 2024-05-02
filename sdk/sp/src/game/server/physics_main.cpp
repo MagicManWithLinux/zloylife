@@ -7,11 +7,6 @@
 
 
 #include "cbase.h"
-
-#ifdef SDK2013CE
-#include <typeinfo>
-
-#else
 #ifdef _WIN32
 #include "typeinfo.h"
 // BUGBUG: typeinfo stomps some of the warning settings (in yvals.h)
@@ -21,7 +16,6 @@
 #else
 #error "need typeinfo defined"
 #endif
-#endif // SDK2013CE
 
 #include "player.h"
 #include "ai_basenpc.h"
@@ -948,8 +942,8 @@ void CBaseEntity::PhysicsDispatchThink( BASEPTR thinkFunc )
 	if ( thinkLimit )
 	{
 		// calculate running time of the AI in milliseconds
-		float ftime = (engine->Time() - startTime) * 1000.0f;
-		if (ftime > thinkLimit)
+		float time = ( engine->Time() - startTime ) * 1000.0f;
+		if ( time > thinkLimit )
 		{
 #if defined( _XBOX ) && !defined( _RETAIL )
 			if ( vprof_think_limit.GetBool() )
@@ -962,14 +956,14 @@ void CBaseEntity::PhysicsDispatchThink( BASEPTR thinkFunc )
 			CAI_BaseNPC *pNPC = MyNPCPointer();
 			if (pNPC && pNPC->GetCurSchedule())
 			{
-				pNPC->ReportOverThinkLimit(ftime);
+				pNPC->ReportOverThinkLimit( time );
 			}
 			else
 			{
 #ifdef _WIN32
-				Msg("%s(%s) thinking for %.02f ms!!!\n", GetClassname(), typeid(this).raw_name(), ftime);
+				Msg( "%s(%s) thinking for %.02f ms!!!\n", GetClassname(), typeid(this).raw_name(), time );
 #elif POSIX
-				Msg("%s(%s) thinking for %.02f ms!!!\n", GetClassname(), typeid(this).name(), ftime);
+				Msg( "%s(%s) thinking for %.02f ms!!!\n", GetClassname(), typeid(this).name(), time );
 #else
 #error "typeinfo"
 #endif

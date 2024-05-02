@@ -445,8 +445,6 @@ public:
 
 	DECLARE_SERVERCLASS();
 	DECLARE_DATADESC();
-	
-	DECLARE_ACTTABLE();
 
 private:
 	
@@ -486,20 +484,6 @@ PRECACHE_WEAPON_REGISTER( weapon_crossbow );
 
 IMPLEMENT_SERVERCLASS_ST( CWeaponCrossbow, DT_WeaponCrossbow )
 END_SEND_TABLE()
-
-acttable_t CWeaponCrossbow::m_acttable[] =
-{
-    { ACT_HL2MP_IDLE,                    ACT_HL2MP_IDLE_CROSSBOW,                    false },
-    { ACT_HL2MP_RUN,                    ACT_HL2MP_RUN_CROSSBOW,                    false },
-    { ACT_HL2MP_IDLE_CROUCH,            ACT_HL2MP_IDLE_CROUCH_CROSSBOW,            false },
-    { ACT_HL2MP_WALK_CROUCH,            ACT_HL2MP_WALK_CROUCH_CROSSBOW,            false },
-    { ACT_HL2MP_GESTURE_RANGE_ATTACK,    ACT_HL2MP_GESTURE_RANGE_ATTACK_CROSSBOW,    false },
-    { ACT_HL2MP_GESTURE_RELOAD,            ACT_HL2MP_GESTURE_RELOAD_CROSSBOW,        false },
-    { ACT_HL2MP_JUMP,                    ACT_HL2MP_JUMP_CROSSBOW,                    false },
-    { ACT_RANGE_ATTACK1,                ACT_RANGE_ATTACK_SHOTGUN,                false },
-};
-
-IMPLEMENT_ACTTABLE( CWeaponCrossbow );
 
 BEGIN_DATADESC( CWeaponCrossbow )
 
@@ -697,7 +681,6 @@ void CWeaponCrossbow::FireBolt( void )
 	pOwner->ViewPunch( QAngle( -2, 0, 0 ) );
 
 	WeaponSound( SINGLE );
-	//pPlayer->SetAnimation(PLAYER_ATTACK1);
 	WeaponSound( SPECIAL2 );
 
 	CSoundEnt::InsertSound( SOUND_COMBAT, GetAbsOrigin(), 200, 0.2 );
